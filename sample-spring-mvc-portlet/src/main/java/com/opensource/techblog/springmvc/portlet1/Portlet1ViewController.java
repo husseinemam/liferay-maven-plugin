@@ -1,3 +1,6 @@
+/*
+Controller Class for Portlet 1
+*/
 package com.opensource.techblog.springmvc.portlet1;
 
 import javax.portlet.RenderRequest;
