@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.opensource.techblog.sampleservice.service.StudentLocalService" class="com.opensource.techblog.sampleservice.service.impl.StudentLocalServiceImpl" />
+	<bean id="com.opensource.techblog.sampleservice.service.StudentService" class="com.opensource.techblog.sampleservice.service.impl.StudentServiceImpl" />
+	<bean id="com.opensource.techblog.sampleservice.service.persistence.StudentPersistence" class="com.opensource.techblog.sampleservice.service.persistence.StudentPersistenceImpl" parent="basePersistence" />
+	<bean id="com.opensource.techblog.sampleservice.service.TeacherLocalService" class="com.opensource.techblog.sampleservice.service.impl.TeacherLocalServiceImpl" />
+	<bean id="com.opensource.techblog.sampleservice.service.TeacherService" class="com.opensource.techblog.sampleservice.service.impl.TeacherServiceImpl" />
+	<bean id="com.opensource.techblog.sampleservice.service.persistence.TeacherPersistence" class="com.opensource.techblog.sampleservice.service.persistence.TeacherPersistenceImpl" parent="basePersistence" />
+</beans>

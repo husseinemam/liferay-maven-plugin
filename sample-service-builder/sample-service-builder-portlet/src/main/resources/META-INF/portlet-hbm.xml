@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.opensource.techblog.sampleservice.model.Student" />
+	<import class="com.opensource.techblog.sampleservice.model.Teacher" />
+	<class name="com.opensource.techblog.sampleservice.model.impl.StudentImpl" table="sample_sb_Student">
+		<cache usage="read-write" />
+		<id name="studentId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="studentName" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="dob" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="standard" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.opensource.techblog.sampleservice.model.impl.TeacherImpl" table="sample_sb_Teacher">
+		<cache usage="read-write" />
+		<id name="teacherId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="teacherName" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="dob" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="subject" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+</hibernate-mapping>

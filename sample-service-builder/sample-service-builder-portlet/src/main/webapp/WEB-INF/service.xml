@@ -1,0 +1,18 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+
+<service-builder package-path="com.opensource.techblog.sampleservice">
+	<namespace>sample_sb</namespace>
+	
+	<entity name="Student" local-service="true" remote-service="true">
+		<column name="studentId" type="long" primary="true" />
+		<column name="studentName" type="long" />
+		<column name="dob" type="String" />
+		<column name="standard" type="Date" />
+	</entity>
+	<entity name="Teacher" local-service="true" remote-service="true">
+		<column name="teacherId" type="long" primary="true" />
+		<column name="teacherName" type="long" />
+		<column name="dob" type="long" />
+		<column name="subject" type="long" />
+	</entity>
+</service-builder>

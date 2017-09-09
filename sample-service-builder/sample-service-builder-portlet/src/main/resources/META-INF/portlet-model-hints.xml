@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.opensource.techblog.sampleservice.model.Student">
+		<field name="studentId" type="long" />
+		<field name="studentName" type="long" />
+		<field name="dob" type="String" />
+		<field name="standard" type="Date" />
+	</model>
+	<model name="com.opensource.techblog.sampleservice.model.Teacher">
+		<field name="teacherId" type="long" />
+		<field name="teacherName" type="long" />
+		<field name="dob" type="long" />
+		<field name="subject" type="long" />
+	</model>
+</model-hints>
